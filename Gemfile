@@ -6,7 +6,10 @@ git_source(:github) do |repo_name|
 end
 
 gem 'jquery-rails'
-
+gem 'wdm', '>= 0.1.0'
+gem 'bootstrap', '~> 4.1.1'
+gem 'better_errors'
+gem 'binding_of_caller'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record
