@@ -26,9 +26,8 @@
     <%= form.date_select :warranty_expire_date, id: :repair_order_item_warranty_expire_date %>
   </div>
 
-  <div class="field">
-    <%= form.label :warranty_coverage_notes %>
-    <%= form.text_field :warranty_coverage_notes, id: :repair_order_item_warranty_coverage_notes %>
+    <div class="field">
+      <%= form.text_area :warranty_coverage_notes, placeholder: 'Enter Additional Notes Here' %>
   </div>
 
   <div class="field">
