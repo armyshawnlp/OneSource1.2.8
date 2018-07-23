@@ -10,21 +10,21 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :tech_name %>
+<form>
+  <div class="form-group">
+    <%= form.label :tech_name %><br>
     <%= form.text_field :tech_name, id: :technician_tech_name %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :technician_status_id %>
     <%= form.collection_select :technician_status_id, TechnicianStatus.all, :id, :tech_status %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
        <%= form.text_area :tech_expertise_notes, placeholder: 'tech expertise notes' %>
   </div>
-
+</form>
   <div class="actions">
     <%= form.submit %>
   </div>
