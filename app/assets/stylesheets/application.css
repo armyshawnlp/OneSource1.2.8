@@ -10,6 +10,159 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
  */
+.navbar {
+    background-color: #222629;
+}
+.navbar .navbar-brand {
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: xx-large;
+
+
+
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #6b6e70;
+}
+.navbar .navbar-text {
+    color: #fdfdfd;
+}
+.navbar .navbar-text a {
+    color: #6b6e70;
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+    color: #6b6e70;
+}
+.navbar .navbar-nav .nav-link {
+    color: #fdfdfd;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #6b6e70;
+}
+.navbar .navbar-nav .dropdown-menu {
+    background-color: #222629;
+    border-color: #17c637;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: #fdfdfd;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+    color: #6b6e70;
+    background-color: #17c637;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+    border-top-color: #17c637;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #6b6e70;
+    background-color: #17c637;
+}
+.navbar .navbar-toggle {
+    border-color: #17c637;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: #17c637;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+    color: #fdfdfd;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: #fdfdfd;
+}
+.navbar .navbar-link {
+    color: #fdfdfd;
+}
+.navbar .navbar-link:hover {
+    color: #6b6e70;
+}
+
+@media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fdfdfd;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #6b6e70;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #6b6e70;
+        background-color: #17c637;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fdfdfd;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #6b6e70;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #6b6e70;
+        background-color: #17c637;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fdfdfd;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #6b6e70;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #6b6e70;
+        background-color: #17c637;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fdfdfd;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #6b6e70;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #6b6e70;
+        background-color: #17c637;
+    }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fdfdfd;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #6b6e70;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #6b6e70;
+    background-color: #17c637;
+}
+
+/* BUTTONS*/
+.btn-primary {
+    color: #17c637;
+    background-color: #222629;
+    border-color: #17c637;
+}

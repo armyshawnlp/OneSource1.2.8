@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  root 'home#index', as: 'home_index'
 
   resources :repair_order_items
   resources :devices

@@ -7,19 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!---- bootstrap css--->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap-4.1.2-dist/css/bootstrap.min.css"/>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-    <!-- text to right-->
-
+      <!-- text to right-->
       <!-- logo image-->
       <div class="navbar-header" style="font-size: large">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href='/'>
           <%= image_tag("/assets/logo.png", size: "90x50") %>
-          <span class="navbar-brand font-weight-bold" font href="#"><h2>Baytown iPhone Repair</h2></span>
+          <span class="navbar-brand" font href="/">Baytown iPhone Repair</span>
         </a>
       </div>
       <!-- Links -->
@@ -34,20 +33,22 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
+
         </li><li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Tables
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Phones <span class="glyphicon glyphicon-phone"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/devices">Devices</a>
+            <a class="dropdown-item" href="/device_manufacturers">Manufacturers</a>
+            <a class="dropdown-item" href="/device_components">Components</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
+        </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Forms
+                    Admin
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
@@ -57,6 +58,7 @@
                   </div>
                 </li>
       </ul>
+    </div>
     </div>
   </nav>
 
